@@ -33,6 +33,22 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation
+# urls:
+#     - text: Home
+#       url: /
+#     - text: Blog
+#       url: /blog
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/page/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
