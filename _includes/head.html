@@ -14,12 +14,6 @@
     {% endif %}
     <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %},{{ page.keywords | escape }}"/>
     
-    <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="RSS"
-    href="/feed.xml"
-    />
 
     <meta content="{{ site.share.fb_appid }}" property="fb:app_id" />
     <meta content="{{ site.title }}" property="og:site_name" />
@@ -103,7 +97,6 @@
   <!-- Jquery -->
   <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
     crossorigin="anonymous"
   ></script>
   <!-- <script src="{{site.url}}{{site.baseurl}}/assets/bower_components/jquery/dist/jquery.min.js"></script> -->
@@ -136,7 +129,6 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"
   ></script>
   <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
